@@ -1,0 +1,49 @@
+<div>
+    <header>
+        <div class="profilepic">
+            <img style="width: 160px;" alt="Profile Picture"
+                 src="/assets/images/gravatar.png">
+        </div>
+    </header>
+    <div class="col-xs-8 col-xs-offset-2">
+        <p class="me">
+            I'm a .NET developer living in Germany
+        </p>
+        <ul class="rightnav">
+            <li>
+                <a href="/">
+                    home
+                </a>
+            </li>
+            <li>
+                <a href="/projects">
+                    projects
+                </a>
+            </li>
+            <li>
+                <a class="nav-about" href="#">
+                    about
+                </a>
+            </li>
+
+            <li>
+                <div class="right-social">
+                    <a class="fa fa-fw fa-twitter"
+                       href="https://twitter.com/share?text={{encode @blog.description}}&amp;url={{@blog.url}}"
+                       onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                        <span class="hidden">Twitter</span>
+                    </a>
+                    <a class="fa fa-fw fa-facebook" href="https://www.facebook.com/sharer/sharer.php?u={{@blog.url}}"
+                       onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                        <span class="hidden">Facebook</span>
+                    </a>
+                    <a class="fa fa-fw fa-google-plus" href="https://plus.google.com/share?url={{@blog.url}}"
+                       onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                        <span class="hidden">Google+</span>
+                    </a>
+                </div>
+            </li>
+        </ul>
+
+    </div>
+</div>

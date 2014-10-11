@@ -1,0 +1,8 @@
+{
+  "name": "change-me",
+  "dependencies": {
+    "bootstrap": "~3.2.0",
+    "font-awesome": "~4.1.0",
+    "github-fork-ribbon-css": "~0.1.1"
+  }
+}

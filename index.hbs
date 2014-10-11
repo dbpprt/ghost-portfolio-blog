@@ -1,0 +1,50 @@
+{{!< default}}
+
+
+<main class="content" role="main">
+    <ul class="blog">
+        {{#foreach posts}}
+            <li>
+                <div class="article-badge"><i class="fa fa-send"></i></div>
+
+                <article itemtype="http://schema.org/BlogPosting" itemscope="" itemprop="blogPost">
+                    <div class="article-heading">
+                        <div class="article-title">
+                            <h1 class="title" itemprop="name">
+                                <a href="{{url}}" itemprop="url">{{{title}}}</a>
+                            </h1>
+
+                            <div class="article-meta">
+                            <span class="date">
+                                <time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time>
+                            </span>
+                            <span class="tags">
+                                <i class="fa fa-fw fa-tag">
+                                </i>
+                                {{tags}}
+                            </span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr/>
+
+                    <div class="article-body" itemprop="articleBody">
+                        <div>
+                            {{content words="50"}} &hellip;
+                        </div>
+                        <hr/>
+                        <div class="article-footer">
+                            <a class="btn btn-primary btn-xs pull-right" href="{{url}}">
+                                >>
+                            </a>
+                        </div>
+
+                    </div>
+                </article>
+            </li>
+        {{/foreach}}
+        <li style="text-align: center; margin-bottom: 0px; padding-bottom: 30px;">
+            {{pagination}}
+        </li>
+    </ul>
+</main>
